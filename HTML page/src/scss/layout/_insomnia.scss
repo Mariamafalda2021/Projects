@@ -1,0 +1,61 @@
+.insomnia {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 45px;
+}
+.small-insomnia {
+    color: #8ccbea;
+    font-family: $roboto;
+    font-size: 14px;
+}
+
+.title-insomnia {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: $robotoSlab;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.text-insomnia {
+    margin-right: 15px;
+    margin-bottom: 30px;
+    font-family: $roboto;
+    color: #4a4a4a;
+    font-size: 18px;
+}
+
+.btn-insomnia {
+    background-color: $textWhite;
+    color: $orangeDeco;
+    border: solid 2px $orangeDeco;
+    border-radius: 22.5px;
+    padding: 10px 25px 10px 26px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2.25;
+        &:hover {
+            background-color: $orangeDeco;
+            color: $textWhite;
+            border: none;
+            transition-duration: 0.5s;
+        }
+}
+
+@media (min-width: 768px){
+    .insomnia {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media (min-width: 1024px){
+    .insomnia {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .btn-insomnia{
+        padding: 10px 67px 10px 67px;
+    }
+}

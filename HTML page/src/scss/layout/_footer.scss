@@ -1,0 +1,77 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $dark-grey-blue;
+    justify-content: space-around;
+    align-items: center;
+    color: $textWhite;
+}
+
+.footer-button {
+    width: 45px;
+    height: 45px;
+    padding: 11px 12.4px 10px 12px;
+    box-shadow: 0 2px 4px 0 $textBlack;
+    background-color: $textWhite;
+    border-radius: 50%;
+    border: none;
+    color: $orangeDeco;
+    animation: boing .3s alternate infinite ease-in; 
+}
+@keyframes boing {
+    0% {
+        transform: translateY(-70%)
+    }
+    100% {
+        transform: translateY(-35%);
+
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.things, .social{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.menu-items {
+    color: $textWhite;
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 50;
+    line-height: 1.88;
+    text-align: center;
+    text-transform: uppercase;  
+}
+.copy {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.heart {
+    color: $orangeDeco;
+}
+
+@media (min-width: 768px){
+    .menu {
+        flex-direction: row;
+    
+    }
+    .things {
+        text-align: justify;
+        margin-left: 200px;
+        padding-right: 200px;
+    }
+    .social{
+        text-align: justify;
+    }
+    .copy {
+        position: absolute;
+        margin-left: -50px;
+        text-align: justify;
+    }
+
+}
