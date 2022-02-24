@@ -1,0 +1,35 @@
+.cards {
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    color: black;
+
+        &__singleCard {
+            background-color: #c59400;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            width: 300px;
+            height: 500px;
+            border-radius: 10px;
+        }
+    
+         &__img {
+            box-sizing: border-box;
+            border-radius: 6px;
+            width: 250px;
+            height: 370px;
+            margin-top: 10px;
+        }
+        &__title{
+            color: #29200e;
+        }   
+         &__description{
+        color: #29200e;
+        }    
+}
