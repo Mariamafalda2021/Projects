@@ -1,0 +1,108 @@
+.team {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px 30px 15px;
+  margin-top: -80px;
+  @media all and (min-width: 768px) {
+    padding: 0px 45px 60px 45px;
+  }
+
+  &__title {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: $rubikFont;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.88;
+    color: $textColor;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    scroll-margin: 125px;
+
+    &--text {
+      box-sizing: border-box;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      color: #54585a;
+      font-size: 16px;
+      line-height: 1.5;
+      max-width: 290px;
+      @media all and (min-width: 768px) {
+        max-width: 678px;
+      }
+      @media all and (min-width: 1200px) {
+        max-width: 601px;
+      }
+    }
+  }
+}
+
+.square {
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  transform: translate(0, 50%) rotate(45deg);
+}
+
+.strengthsandweaknesses {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-color: #f1f1f1;
+  color: var(--strengths-descriptions);
+  line-height: 24px;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 45px 30px 60px 30px;
+  }
+
+  &__title {
+    color: $blueGreen;
+    font-family: $rubikFont;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2.05;
+
+    &--text {
+      box-sizing: border-box;
+      max-width: 290px;
+      font-family: "Open Sans", sans-serif;
+      color: #54585a;
+      padding-bottom: 30px;
+      @media all and (min-width: 768px) {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0;
+        max-width: 324px;
+      }
+      @media all and (min-width: 1200px) {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 22.5px;
+        margin-right: 22.5px;
+        max-width: 439px;
+      }
+    }
+  }
+}

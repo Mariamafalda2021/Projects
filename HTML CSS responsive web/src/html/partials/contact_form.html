@@ -1,0 +1,36 @@
+<div class="container_form">
+  <form class="form" action="https://formspree.io/f/mrgrndpw" method="post">
+
+    <label class="form__label" for="nombre">Nombre completo<span class="span_contact"> *</span></label>
+    <input class="form__input" id="nombre" type="text" placeholder="Nombre..."
+      title="Estamos deseando conocerte, ¿empezamos por tu nombre? (Debe contener sólo letras)"
+      pattern="[a-zA-ZàáèéìíòóùúüñçÀÁÉÌÍÒÓÜÑ ,.'-]{2,48}" required />
+
+    <div class="form__together">
+      <div class="form__together--email">
+        <div class="label_block">
+          <label class="label" for="email">Email <span class="span_contact">*</span></label>
+        </div>
+        <input class="input_email" id="email" type="email" placeholder="nombre.apellidos@mail.com"
+          title="Queremos poder responderte así que, necesitamos tu email."
+          pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required />
+      </div>
+      <div class="form__together--tel">
+        <div class="label_block">
+          <label class="label" for="numero">Teléfono</label>
+        </div>
+        <input class="input_tel" id="numero" type="tel" placeholder="Ej:123456789"
+          title="Si quieres, también puedes dejarnos tu número de teléfono." />
+      </div>
+    </div>
+
+    <label class="form__label" for="texto">Mensaje<span class="span_contact"> *</span></label>
+    <textarea class="form__textarea" id="texto" name="texto" rows="3" cols="80" placeholder="¿Qué necesitas?"
+      title="Estamos deseando leer tu mensaje." required></textarea>
+
+    <div class="form__button">
+      <input class="form__button--item" type="submit" value="Enviar" />
+    </div>
+
+  </form>
+</div>
