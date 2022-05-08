@@ -1,6 +1,6 @@
 import '../styles/App.css';
 import React, { useState, useEffect } from 'react';
-import { Form, Card, Image, Icon } from 'semantic-ui-react'
+import { Form, Card, Image, Icon } from 'semantic-ui-react';
 
 
 function App() {
@@ -47,9 +47,10 @@ function App() {
       </div>
       <div className="search">
         <Form onSubmit={handleSubmit}>
-          <Form.Group>
+          <Form.Group className="form">
             <Form.Input
-              placeholder='Github user'
+              className="input"
+              placeholder='Find a repository'
               name='github_user'
               onChange={handleSearch}
             />
