@@ -1,10 +1,10 @@
 import '../styles/App.css';
 import React, { useState, useEffect } from 'react';
-import { Form, Card, Image, Icon } from 'semantic-ui-react';
+import { Form, Card, Image, Icon } from 'semantic-ui-react'
 
 
 function App() {
-  const [name, setname] = useState('');
+  const [name, setName] = useState('');
   const [userName, setUserName] = useState('');
   const [followers, setFollowers] = useState('');
   const [following, setFollowing] = useState('');
@@ -35,10 +35,10 @@ function App() {
   }
   const handleSubmit = () => {
     fetch(`https://api.github.com/users/${userInput}`)
-    then(res => res.json())
-    then(data => {
-      setData(data)
-    })
+      .then(res => res.json())
+      .then(data => {
+        setData(data)
+      })
   }
   return (
     <div className="App">
@@ -46,10 +46,13 @@ function App() {
         Github Search
       </div>
       <div className="search">
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <Form.Group>
             <Form.Input
-              placeholder='Name' name='name' />
+              placeholder='Github user'
+              name='github_user'
+              onChange={handleSearch}
+            />
             <Form.Button content='Search' />
           </Form.Group>
         </Form>
@@ -81,7 +84,7 @@ function App() {
           </Card.Content>
         </Card>
       </div>
-    </div>
+    </div >
   );
 }
 
