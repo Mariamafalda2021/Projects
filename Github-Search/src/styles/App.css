@@ -1,0 +1,32 @@
+.navbar {
+    padding: 20px;
+    background-color: antiquewhite;
+
+}
+
+.search {
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 260px;
+    margin-right: 20px;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.input {
+    border: none;
+    float: right;
+    background-color: green;
+}
+
+.card {
+    display: inline-block;
+    align-items: center;
+}
